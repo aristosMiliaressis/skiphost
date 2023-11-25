@@ -22,7 +22,10 @@ func main() {
 	flag.StringVar(&targetUrl, "u", "", "Target url.")
 	flag.Parse()
 
-	client := httpc.NewHttpClient(httpc.DefaultOptions, context.Background())
+	opts := httpc.DefaultOptions
+	opts.Performance.ReplayRateLimitted = false
+
+	client := httpc.NewHttpClient(opts, context.Background())
 
 	baseReq, _ := http.NewRequest("GET", targetUrl, nil)
 
