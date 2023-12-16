@@ -2,7 +2,7 @@ module github.com/aristosMiliaressis/skiphost
 
 go 1.20
 
-require github.com/aristosMiliaressis/httpc v0.0.0-20231113144243-0a0cdc004ad4
+require github.com/aristosMiliaressis/httpc v0.0.0-20231215094615-e50261f0d5ac
 
 require (
 	github.com/Mzack9999/go-http-digest-auth-client v0.6.1-0.20220414142836-eb8883508809 // indirect
